@@ -8,7 +8,7 @@ FoodRush is a full-stack food ordering web application built using **Python, Fla
 
 FoodRush is an online food ordering platform where users can browse food items, search for food, add items to their cart, manage their wishlist, apply coupons, place orders, select payment methods, rate food items, and view their order history.
 
-The project combines **full-stack web development, database management, and business intelligence** in one practical application.
+The project combines **full-stack web development, database management, and business intelligence** into one practical application.
 
 ### Main Components
 
@@ -102,47 +102,47 @@ The project combines **full-stack web development, database management, and busi
 ## 🏗️ Application Architecture
 
 ```text
-                  ┌──────────────────────┐
-                  │     FoodRush User    │
-                  │      Interface       │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │    HTML / CSS / JS   │
-                  │       Frontend       │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │     Flask Backend    │
-                  │       Python         │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │    MySQL Database    │
-                  │                      │
-                  │ Users                │
-                  │ Food Items           │
-                  │ Categories           │
-                  │ Orders               │
-                  │ Order Items          │
-                  │ Wishlist             │
-                  │ Coupons              │
-                  │ Ratings              │
-                  │ Payments             │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │       Power BI       │
-                  │ Analytics Dashboard  │
-                  └──────────────────────┘
+                    ┌──────────────────────┐
+                    │     FoodRush User    │
+                    │      Interface       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    HTML / CSS / JS   │
+                    │       Frontend       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     Flask Backend     │
+                    │       Python          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    MySQL Database     │
+                    │                      │
+                    │ Users                │
+                    │ Food Items           │
+                    │ Categories           │
+                    │ Orders              │
+                    │ Order Items         │
+                    │ Wishlist             │
+                    │ Coupons              │
+                    │ Ratings              │
+                    │ Payments             │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       Power BI       │
+                    │ Analytics Dashboard   │
+                    └──────────────────────┘
 FoodRush/
 │
 ├── static/
-│   └── food images, CSS and JavaScript files
+│   └── food images and static resources
 │
 ├── templates/
 │   └── index.html
@@ -152,8 +152,7 @@ FoodRush/
 ├── FoodRush - Dashboard.pbix
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-└── .env
+└── .gitignore
 File Description
 File / Folder	Description
 app.py	Main Flask backend application
@@ -164,13 +163,9 @@ FoodRush - Dashboard.pbix	Power BI dashboard
 requirements.txt	Required Python packages
 .gitignore	Files excluded from GitHub
 README.md	Project documentation
-.env	Local environment configuration
-
-Note: .env is used locally and must not be uploaded to GitHub.
-
 🗄️ Database
 
-FoodRush uses MySQL as its backend database.
+FoodRush uses MySQL as the backend database.
 
 The database manages information related to:
 
@@ -184,7 +179,7 @@ Coupons
 Ratings
 Payments
 
-The Flask backend connects to MySQL to retrieve and update application data.
+The Flask application connects to MySQL to retrieve and update application data.
 
 📊 Power BI Dashboard
 
@@ -224,18 +219,18 @@ Move into the project directory:
 cd FoodRush-Food-Ordering-System
 3. Install Python Dependencies
 
-Install the required packages:
+Install the required Python packages:
 
 pip install -r requirements.txt
 4. Configure MySQL
 
-Make sure MySQL Server is running.
+Make sure your MySQL Server is running.
 
 Import the provided SQL file:
 
 data_sql.sql
 
-using MySQL Workbench or the MySQL command line.
+You can import the SQL file using MySQL Workbench or the MySQL command line.
 
 5. Configure Environment Variables
 
