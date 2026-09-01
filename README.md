@@ -102,43 +102,19 @@ The project combines **full-stack web development, database management, and busi
 ## 🏗️ Application Architecture
 
 ```text
-                    ┌──────────────────────┐
-                    │     FoodRush User    │
-                    │      Interface       │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │    HTML / CSS / JS   │
-                    │       Frontend       │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │     Flask Backend     │
-                    │       Python          │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │    MySQL Database     │
-                    │                      │
-                    │ Users                │
-                    │ Food Items           │
-                    │ Categories           │
-                    │ Orders              │
-                    │ Order Items         │
-                    │ Wishlist             │
-                    │ Coupons              │
-                    │ Ratings              │
-                    │ Payments             │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │       Power BI       │
-                    │ Analytics Dashboard   │
-                    └──────────────────────┘
+FoodRush User
+     ↓
+HTML / CSS / JavaScript
+     ↓
+Flask Backend
+     ↓
+MySQL Database
+     ↓
+Order & Customer Data
+     ↓
+Power BI Dashboard
+
+📁 Project Structure
 FoodRush/
 │
 ├── static/
@@ -153,6 +129,7 @@ FoodRush/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
 File Description
 File / Folder	Description
 app.py	Main Flask backend application
@@ -198,6 +175,7 @@ Food-item performance
 Category performance
 Business KPIs
 Power BI File
+
 FoodRush - Dashboard.pbix
 
 Open the .pbix file using Microsoft Power BI Desktop.
@@ -234,7 +212,7 @@ You can import the SQL file using MySQL Workbench or the MySQL command line.
 
 5. Configure Environment Variables
 
-Create a .env file in the project directory.
+Create a .env file inside the project directory.
 
 Add your local MySQL configuration:
 
@@ -343,4 +321,4 @@ Lakshmi Sundaramoorthy
 
 FoodRush – Food Ordering & Analytics Platform
 
-A full-stack web development and business intelligence project created for educational and portfolio purposes.
+A full-stack web deelopment and business intelligence project created for educational and portfolio purposes.
